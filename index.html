@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat-A1</title>
+    <link rel="stylesheet" href="./styles.css?v=chat-a1-168" />
+    <link rel="stylesheet" href="./theme-token-overrides.css?v=chat-a1-001" />
+  </head>
+  <body>
+    <main class="page" aria-label="DreaminaAI home">
+      <aside class="sidebar">
+        <div class="sidebar-logo-row">
+          <a class="brand" href="#" aria-label="DreaminaAI">
+            <span class="brand-full" aria-hidden="true">
+              <img class="brand-full-mark" src="./assets/figma/sidebar/logo.svg" alt="" />
+              <span class="brand-wordmark"></span>
+            </span>
+            <img class="brand-mark" src="./assets/figma/sidebar/logo.svg" alt="" />
+            <img class="brand-open-icon" src="./assets/figma/sidebar/sidebar-expand-right.svg" alt="" />
+          </a>
+          <button class="sidebar-toggle" type="button" aria-label="Collapse sidebar" aria-expanded="true">
+            <img src="./assets/figma/sidebar/sidebar-collapse-left.svg" alt="" />
+          </button>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <button class="nav-item nav-create-item active" data-tip="Create">
+            <span class="nav-icon-box create-icon-box">
+              <svg class="create-motion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path class="create-default-shape" d="M21.6226 11.0531C22.5225 11.3624 22.5225 12.6345 21.6226 12.9438L20.7083 13.2587L20.3824 13.3761C17.0401 14.6335 14.4248 17.3183 13.2602 20.7068L12.9453 21.621C12.6553 22.4649 11.5187 22.5177 11.123 21.7792L11.0547 21.621L10.7398 20.7068C9.53758 17.209 6.78942 14.4609 3.29168 13.2587L2.37741 12.9438C1.47746 12.6345 1.47746 11.3624 2.37741 11.0531L3.29168 10.7382C6.78942 9.53603 9.53758 6.78787 10.7398 3.29013L11.0547 2.37586C11.364 1.47592 12.636 1.47592 12.9453 2.37586L13.2602 3.29013C14.4248 6.67855 17.0401 9.36337 20.3824 10.6208L20.7083 10.7382L21.6226 11.0531ZM18.5249 11.9978C15.6757 10.6232 13.3744 8.3222 12 5.4729C10.6256 8.3222 8.32434 10.6232 5.47514 11.9978C8.32421 13.3721 10.6254 15.6737 12 18.5226C13.3746 15.6737 15.6758 13.3721 18.5249 11.9978Z" fill="black"/>
+                <g class="create-active-shapes">
+                  <path d="M6.59549 2.9508C6.66135 2.00147 7.89075 1.67205 8.42245 2.46127L8.96295 3.26357C11.0295 6.33099 14.395 8.27408 18.0847 8.53003L19.0498 8.59697C19.9991 8.66282 20.3285 9.89222 19.5393 10.4239L18.737 10.9644C15.6696 13.0309 13.7265 16.3965 13.4706 20.0862L13.4036 21.0513C13.3378 22.0006 12.1084 22.33 11.5767 21.5408L11.0362 20.7385C8.96965 17.6711 5.60411 15.728 1.91439 15.472L0.949329 15.4051C-7.06549e-06 15.3392 -0.329424 14.1098 0.459799 13.5781L1.2621 13.0376C4.32951 10.9711 6.2726 7.60558 6.52855 3.91587L6.59549 2.9508Z" fill="black"/>
+                  <path d="M20.9117 14.3049C21.1951 14.0582 21.6303 14.3095 21.5584 14.6782L21.4853 15.0531C21.2059 16.4863 21.603 17.9683 22.5616 19.0698L22.8123 19.3579C23.0589 19.6413 22.8077 20.0764 22.4389 20.0046L22.0641 19.9315C20.6309 19.6521 19.1489 20.0492 18.0474 21.0077L17.7593 21.2585C17.4759 21.5051 17.0407 21.2539 17.1126 20.8851L17.1857 20.5102C17.4651 19.077 17.068 17.595 16.1094 16.4936L15.8587 16.2055C15.6121 15.922 15.8633 15.4869 16.232 15.5588L16.6069 15.6319C18.0401 15.9113 19.5221 15.5142 20.6236 14.5556L20.9117 14.3049Z" fill="black"/>
+                </g>
+                <path class="create-scheme3-active-shape" d="M11.0543 2.37616C11.3636 1.47621 12.6356 1.47621 12.9449 2.37616L13.2598 3.29043C14.462 6.78817 17.2102 9.53633 20.7079 10.7385L21.6222 11.0534C22.5221 11.3627 22.5221 12.6348 21.6222 12.9441L20.7079 13.259C17.2102 14.4611 14.462 17.2093 13.2598 20.707L12.9449 21.6213C12.6356 22.5212 11.3636 22.5212 11.0543 21.6213L10.7394 20.707C9.53718 17.2093 6.78902 14.4611 3.29128 13.259L2.37701 12.9441C1.47707 12.6348 1.47707 11.3627 2.37701 11.0534L3.29128 10.7385C6.78902 9.53633 9.53718 6.78817 10.7394 3.29043L11.0543 2.37616Z" fill="black"/>
+              </svg>
+            </span>
+            <span class="nav-label">Create</span>
+          </button>
+          <button class="nav-item nav-explore-item" data-tip="Explore">
+            <span class="nav-icon-box explore-icon-box">
+              <svg class="explore-motion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path class="explore-active-shape" d="M12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1ZM15.2188 9.41699C15.349 9.02622 14.9777 8.65418 14.5869 8.78418L10.9434 9.99902C10.4956 10.1483 10.1445 10.4996 9.99512 10.9473L8.78027 14.5908C8.65032 14.9816 9.02233 15.3529 9.41309 15.2227L13.0557 14.0088C13.5036 13.8595 13.8556 13.5075 14.0049 13.0596L15.2188 9.41699Z" fill="black"/>
+                <path class="explore-needle" d="M14.5869 8.78223C14.9777 8.65222 15.349 9.02426 15.2188 9.41504L14.0049 13.0576C13.8556 13.5055 13.5036 13.8575 13.0557 14.0068L9.41309 15.2207C9.02232 15.351 8.65032 14.9796 8.78027 14.5889L9.99512 10.9453C10.1445 10.4976 10.4956 10.1464 10.9434 9.99707L14.5869 8.78223Z" fill="black"/>
+                <path class="explore-ring" fill-rule="evenodd" clip-rule="evenodd" d="M12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1ZM12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3Z" fill="black"/>
+              </svg>
+            </span>
+            <span class="nav-label">Explore</span>
+          </button>
+          <button class="nav-item nav-assets-item" data-tip="Assets">
+            <span class="nav-icon-box assets-icon-box">
+              <svg class="assets-motion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <defs>
+                  <mask id="assets-scheme3-default-mask" fill="white">
+                    <path d="M8.5791 2.5C9.47838 2.50009 10.3307 2.90382 10.9004 3.59961L11.7422 4.62793C11.9321 4.85971 12.216 4.99414 12.5156 4.99414H19C20.6567 4.9943 22 6.33738 22 7.99414V17.498C22 19.7071 20.209 21.4979 18 21.498H6.5C4.29086 21.498 2.5 19.7072 2.5 17.498V5.5C2.5 3.84315 3.84315 2.5 5.5 2.5H8.5791Z"/>
+                  </mask>
+                </defs>
+                <path class="assets-scheme3-default-back" d="M8.5791 2.5L8.57931 0.5H8.5791V2.5ZM10.9004 3.59961L12.448 2.33273L12.4478 2.33253L10.9004 3.59961ZM11.7422 4.62793L10.1946 5.89481L10.1952 5.89557L11.7422 4.62793ZM12.5156 4.99414L12.5156 6.99414H12.5156V4.99414ZM19 4.99414L19.0002 2.99414H19V4.99414ZM18 21.498V23.498H18.0001L18 21.498ZM2.5 5.5L0.5 5.5V5.5H2.5ZM8.5791 2.5L8.57889 4.5C8.87865 4.50003 9.16306 4.63475 9.35297 4.86669L10.9004 3.59961L12.4478 2.33253C11.4983 1.17289 10.0781 0.500157 8.57931 0.5L8.5791 2.5ZM10.9004 3.59961L9.3528 4.86649L10.1946 5.89481L11.7422 4.62793L13.2898 3.36105L12.448 2.33273L10.9004 3.59961ZM11.7422 4.62793L10.1952 5.89557C10.7649 6.59073 11.6164 6.99414 12.5156 6.99414L12.5156 4.99414L12.5156 2.99414C12.8155 2.99414 13.0994 3.12869 13.2891 3.36028L11.7422 4.62793ZM12.5156 4.99414V6.99414H19V4.99414V2.99414H12.5156V4.99414ZM19 4.99414L18.9998 6.99414C19.5523 6.99419 20 7.44214 20 7.99414H22H24C24 5.23263 21.7611 2.9944 19.0002 2.99414L19 4.99414ZM22 7.99414H20V17.498H22H24V7.99414H22ZM22 17.498H20C20 18.6024 19.1045 19.498 17.9999 19.498L18 21.498L18.0001 23.498C21.3135 23.4978 24 20.8118 24 17.498H22ZM18 21.498V19.498H6.5V21.498V23.498H18V21.498ZM6.5 21.498V19.498C5.39543 19.498 4.5 18.6026 4.5 17.498H2.5H0.5C0.5 20.8118 3.18629 23.498 6.5 23.498V21.498ZM2.5 17.498H4.5V5.5H2.5H0.5V17.498H2.5ZM2.5 5.5L4.5 5.5C4.5 4.94771 4.94772 4.5 5.5 4.5V2.5V0.5C2.73857 0.5 0.500002 2.73858 0.5 5.5L2.5 5.5ZM5.5 2.5V4.5H8.5791V2.5V0.5H5.5V2.5Z" fill="black" mask="url(#assets-scheme3-default-mask)"/>
+                <path class="assets-scheme3-default-front" d="M21 11V17.5098C21 19.1666 19.6568 20.5098 18 20.5098L6.49902 20.5088C4.84257 20.5084 3.50019 19.1653 3.5 17.5088L3.49902 11H21Z" stroke="black" stroke-width="2"/>
+                <path class="assets-morph-back" d="M8.72852 2.50488C9.57598 2.55313 10.3668 2.95902 10.9004 3.62598L11.7002 4.625C11.8899 4.86183 12.177 4.99995 12.4805 5H19C20.6566 5.00018 21.9999 6.34333 22 8V9.22754C21.6465 9.07959 21.2569 8.99748 20.8447 8.99707L20 8.99609V8C20 7.44785 19.5521 7.00018 19 7H12.4805C11.5692 6.99995 10.707 6.58553 10.1377 5.87402L9.33887 4.875C9.14926 4.63815 8.86197 4.50024 8.55859 4.5H5.50098C4.94869 4.5 4.50098 4.94772 4.50098 5.5V11.4971L3.45801 16.7119C2.96291 19.1871 4.8557 21.496 7.37988 21.4961H18.083L18.001 21.498H6.50098C4.29184 21.498 2.50098 19.7072 2.50098 17.498V5.5C2.50098 3.8949 3.76153 2.58421 5.34668 2.50391L5.50098 2.5H8.55859L8.72852 2.50488Z" fill="black"/>
+                <path class="assets-active-cutout" d="M4.42 13.44L3.44 17.9L4.24 20.03L6.45 21.24L8.8 21.5L7.28 20.82L5.8 19.15L5.2 17.02L6.25 11.62L4.42 13.44Z" fill="white" fill-opacity="0"/>
+                <path class="assets-morph-front" d="M21 9.99707V17.4961C21 19.1529 19.6569 20.4961 18 20.4961H6.5C4.84314 20.4961 3.5 19.1529 3.5 17.4961V9.99805H10.502L13.0439 9.99219L21 9.99707Z" fill="black" fill-opacity="0" stroke="black" stroke-width="2"/>
+              </svg>
+            </span>
+            <span class="nav-label">Assets</span>
+          </button>
+          <button class="nav-item nav-elements-item" data-tip="Elements">
+            <span class="nav-icon-box elements-icon-box">
+              <span class="elements-card-peek" aria-hidden="true"></span>
+              <svg class="elements-motion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <g class="elements-default-shape">
+                  <path d="M15.0996 2.5C17.3398 2.5 18.4608 2.49957 19.3164 2.93555C20.0689 3.31902 20.681 3.93109 21.0645 4.68359C21.5004 5.53924 21.5 6.66018 21.5 8.90039V15.0996C21.5 17.3398 21.5004 18.4608 21.0645 19.3164L20.9102 19.5918C20.5259 20.2183 19.9749 20.7289 19.3164 21.0645L19.1523 21.1406C18.316 21.4999 17.1999 21.5 15.0996 21.5H8.90039L7.41602 21.4932C6.22431 21.4744 5.46088 21.4041 4.84766 21.1406L4.68359 21.0645C4.02512 20.7289 3.47413 20.2183 3.08984 19.5918L2.93555 19.3164C2.49957 18.4608 2.5 17.3398 2.5 15.0996V8.90039C2.5 6.66018 2.49957 5.53924 2.93555 4.68359C3.31902 3.93109 3.93109 3.31902 4.68359 2.93555C5.32525 2.60861 6.11607 2.52728 7.41602 2.50684L8.90039 2.5H15.0996ZM8.90039 4.5C7.74728 4.5 7.00222 4.50155 6.43555 4.54785C5.89231 4.59224 5.69068 4.66739 5.5918 4.71777C5.21554 4.90951 4.90951 5.21554 4.71777 5.5918C4.66739 5.69068 4.59224 5.89231 4.54785 6.43555C4.50155 7.00222 4.5 7.74728 4.5 8.90039V15.0996C4.5 16.2527 4.50155 16.9978 4.54785 17.5645C4.59224 18.1077 4.66739 18.3093 4.71777 18.4082C4.90951 18.7845 5.21554 19.0905 5.5918 19.2822C5.69068 19.3326 5.89231 19.4078 6.43555 19.4521C7.00222 19.4984 7.74728 19.5 8.90039 19.5H15.0996C16.2527 19.5 16.9978 19.4984 17.5645 19.4521C18.1077 19.4078 18.3093 19.3326 18.4082 19.2822C18.7845 19.0905 19.0905 18.7845 19.2822 18.4082C19.3326 18.3093 19.4078 18.1077 19.4521 17.5645C19.4984 16.9978 19.5 16.2527 19.5 15.0996V8.90039C19.5 7.74728 19.4984 7.00222 19.4521 6.43555C19.4078 5.89231 19.3326 5.69068 19.2822 5.5918C19.0905 5.21554 18.7845 4.90951 18.4082 4.71777C18.3093 4.66739 18.1077 4.59224 17.5645 4.54785C16.9978 4.50155 16.2527 4.5 15.0996 4.5H8.90039Z" fill="black"/>
+                  <path d="M7.35742 15.7803C10.3376 14.5882 13.6624 14.5882 16.6426 15.7803L17.3711 16.0713C17.8838 16.2764 18.1336 16.8584 17.9287 17.3711C17.7236 17.8838 17.1416 18.1336 16.6289 17.9287L15.8994 17.6367C13.3962 16.6355 10.6038 16.6355 8.10059 17.6367L7.37109 17.9287C6.85839 18.1336 6.27636 17.8838 6.07129 17.3711C5.86642 16.8584 6.11624 16.2764 6.62891 16.0713L7.35742 15.7803Z" fill="black"/>
+                  <path class="elements-head elements-head-default" d="M12 6C13.933 6 15.5 7.567 15.5 9.5C15.5 11.433 13.933 13 12 13C10.067 13 8.5 11.433 8.5 9.5C8.5 7.567 10.067 6 12 6ZM12 8C11.1716 8 10.5 8.67157 10.5 9.5C10.5 10.3284 11.1716 11 12 11C12.8284 11 13.5 10.3284 13.5 9.5C13.5 8.67157 12.8284 8 12 8Z" fill="black"/>
+                </g>
+                <g class="elements-active-shape">
+                  <path d="M15.0996 2.5C17.3398 2.5 18.4608 2.49957 19.3164 2.93555C20.0689 3.31902 20.681 3.93109 21.0645 4.68359C21.5004 5.53924 21.5 6.66018 21.5 8.90039V15.0996C21.5 17.3398 21.5004 18.4608 21.0645 19.3164C20.681 20.0689 20.0689 20.681 19.3164 21.0645C18.4608 21.5004 17.3398 21.5 15.0996 21.5H8.90039C6.66018 21.5 5.53924 21.5004 4.68359 21.0645C3.93109 20.681 3.31902 20.0689 2.93555 19.3164C2.49957 18.4608 2.5 17.3398 2.5 15.0996V8.90039C2.5 6.66018 2.49957 5.53924 2.93555 4.68359C3.31902 3.93109 3.93109 3.31902 4.68359 2.93555C5.53924 2.49957 6.66018 2.5 8.90039 2.5H15.0996Z" fill="black"/>
+                  <path d="M16.6426 15.7803C13.6624 14.5882 10.3376 14.5882 7.35742 15.7803L6.62891 16.0713C6.11623 16.2764 5.86642 16.8584 6.07129 17.3711C6.27636 17.8838 6.85839 18.1336 7.37109 17.9287L8.10059 17.6367C10.6038 16.6355 13.3962 16.6355 15.8994 17.6367L16.6289 17.9287C17.1416 18.1336 17.7236 17.8838 17.9287 17.3711C18.1336 16.8584 17.8838 16.2764 17.3711 16.0713L16.6426 15.7803Z" fill="white"/>
+                  <path class="elements-head elements-head-active" d="M12 7C10.6193 7 9.5 8.11929 9.5 9.5C9.5 10.8807 10.6193 12 12 12C13.3807 12 14.5 10.8807 14.5 9.5C14.5 8.11929 13.3807 7 12 7Z" fill="white"/>
+                </g>
+              </svg>
+            </span>
+            <span class="nav-label">Elements</span>
+          </button>
+        </nav>
+
+        <section class="side-section chat-list">
+          <div class="side-heading"><span>Chat</span><button class="chat-create-button" aria-label="Add chat" data-tip="New chat"><img src="./assets/figma/dom/icon-chat-create.svg" alt="" /></button></div>
+          <button class="project-row" data-project-state="loading" data-tip="Blurred light and shadow characters"><img src="./assets/figma/dom/project-1.png" alt="" /><span class="project-title">Blurred light and shadow characters</span><span class="project-status" aria-hidden="true"></span><span class="project-actions"><span class="project-action project-action-more"><img src="./assets/figma/dom/icon-more.svg" alt="" /></span></span></button>
+          <button class="project-row" data-project-state="done" data-tip="Surreal Memories"><img src="./assets/figma/dom/project-2.png" alt="" /><span class="project-title">Surreal Memories</span><span class="project-status" aria-hidden="true"></span><span class="project-actions"><span class="project-action project-action-more"><img src="./assets/figma/dom/icon-more.svg" alt="" /></span></span></button>
+          <button class="project-row" data-project-state="error" data-tip="Shadow figure photography"><img src="./assets/figma/dom/project-4.png" alt="" /><span class="project-title">Shadow figure photography</span><span class="project-status" aria-hidden="true"></span><span class="project-actions"><span class="project-action project-action-more"><img src="./assets/figma/dom/icon-more.svg" alt="" /></span></span></button>
+          <button class="project-row is-project-pinned" data-tip="Surreal Memories"><img src="./assets/figma/dom/project-2.png" alt="" /><span class="project-title">Surreal Memories</span><span class="project-status" aria-hidden="true"></span><span class="project-actions"><span class="project-action project-action-more"><img src="./assets/figma/dom/icon-more.svg" alt="" /></span></span></button>
+          <button class="project-row" data-tip="The Dream Journey of the Brown Bear and the Cat"><img src="./assets/figma/dom/project-3.png" alt="" /><span class="project-title">The Dream Journey of the Brown Bear and the Cat</span><span class="project-actions"><span class="project-action project-action-more"><img src="./assets/figma/dom/icon-more.svg" alt="" /></span></span></button>
+          <button class="project-row" data-tip="Shadow figure photography"><img src="./assets/figma/dom/project-4.png" alt="" /><span class="project-title">Shadow figure photography</span><span class="project-actions"><span class="project-action project-action-more"><img src="./assets/figma/dom/icon-more.svg" alt="" /></span></span></button>
+          <button class="show-more-row">show more <img src="./assets/figma/dom/showmore.svg" alt="" /></button>
+        </section>
+
+        <section class="side-section canvas-list">
+          <div class="side-heading"><span>Canvas</span><button class="canvas-create-button" aria-label="Add canvas" data-tip="New canvas" data-tip-arrow="true"><img src="./assets/figma/dom/icon-add.svg" alt="" /><span class="button-tip" aria-hidden="true"><span class="button-tip-text">New canvas</span><span class="button-tip-icon"><img src="./assets/figma/dom/icon-arrow-right-up.svg" alt="" /></span></span></button></div>
+          <button class="project-row" data-tip="Parloa brand design proposal" data-tip-arrow="true"><img src="./assets/figma/dom/canvas-1.png" alt="" /><span class="project-title">Parloa brand design proposal</span><span class="project-actions"><span class="project-action project-action-open"><img src="./assets/figma/dom/icon-arrow-right-up.svg" alt="" /></span><span class="project-action project-action-more"><img src="./assets/figma/dom/icon-more.svg" alt="" /></span></span><span class="project-tip" aria-hidden="true"><span class="project-tip-text">Parloa brand design proposal</span><span class="project-tip-icon"><img src="./assets/figma/dom/icon-arrow-right-up.svg" alt="" /></span></span></button>
+          <button class="project-row stacked-thumb" data-tip="Blurred light and shadow characters" data-tip-arrow="true">
+            <span class="stack"><img src="./assets/figma/dom/canvas-2a.png" alt="" /><img src="./assets/figma/dom/canvas-2b.png" alt="" /></span>
+            <span class="project-title">Blurred light and shadow characters</span>
+            <span class="project-actions"><span class="project-action project-action-open"><img src="./assets/figma/dom/icon-arrow-right-up.svg" alt="" /></span><span class="project-action project-action-more"><img src="./assets/figma/dom/icon-more.svg" alt="" /></span></span>
+            <span class="project-tip" aria-hidden="true"><span class="project-tip-text">Blurred light and shadow characters</span><span class="project-tip-icon"><img src="./assets/figma/dom/icon-arrow-right-up.svg" alt="" /></span></span>
+          </button>
+        </section>
+
+        <div class="scheme-switch" role="tablist" aria-label="Assets animation scheme">
+          <span class="scheme-switch-indicator" aria-hidden="true"></span>
+          <button class="scheme-option active" type="button" data-assets-scheme="scheme-1" role="tab" aria-selected="true">方案一</button>
+          <button class="scheme-option" type="button" data-assets-scheme="scheme-2" role="tab" aria-selected="false">方案二</button>
+          <button class="scheme-option" type="button" data-assets-scheme="scheme-3" role="tab" aria-selected="false">方案三</button>
+        </div>
+      </aside>
+
+      <section class="main-stage" data-active-mode="chat">
+        <div class="star-pattern" aria-hidden="true"></div>
+        <div class="twinkle-layer" aria-hidden="true"></div>
+        <img class="canvas-top-right-art" src="./assets/figma/scheme1/canvas-top-right.svg" alt="" aria-hidden="true" />
+        <div class="top-accent" aria-hidden="true"></div>
+        <div class="user-toolbar" aria-label="Account">
+          <button class="gift-button" aria-label="Gift"><img src="./assets/figma/dom/icon-user-gift.svg" alt="" /></button>
+          <button class="message-button" aria-label="Messages"><img src="./assets/figma/dom/icon-bell.svg" alt="" /></button>
+          <span class="toolbar-divider" aria-hidden="true"></span>
+          <button class="member-pill"><img src="./assets/figma/dom/member-star.svg" alt="" /><span>32</span><span>Upgrade</span></button>
+          <button class="profile-button" aria-label="Profile"><img src="./assets/figma/dom/web-avatar.svg" alt="" /></button>
+        </div>
+
+        <section class="hero">
+          <h1 class="title" aria-live="polite">
+            <span class="typed-prefix">What would you like to</span>
+            <span class="gradient-word typed-gradient">create</span>
+            <span class="typed-suffix">today?</span>
+            <span class="typing-caret" aria-hidden="true"></span>
+          </h1>
+
+          <div class="mode-tabs" role="tablist" aria-label="Creation mode">
+            <span class="mode-indicator" aria-hidden="true"></span>
+            <button class="mode-tab active" data-mode="chat" role="tab" aria-selected="true">Chat</button>
+            <button class="mode-tab" data-mode="canvas" role="tab" aria-selected="false">Canvas</button>
+          </div>
+        </section>
+
+        <section class="composer composer-shell" data-composer-mode="chat">
+          <svg class="composer-path-border" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true">
+            <rect class="composer-path-border-soft-base" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+            <g class="composer-path-border-runner composer-path-border-runner-soft">
+              <rect class="composer-path-border-segment" style="--segment:26; --offset:0; --runner-color:#D6EDFB;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:28; --offset:-26; --runner-color:#D7EDFB;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:28; --offset:-54; --runner-color:#D9F1FC;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:22; --offset:-82; --runner-color:#DBF3FB;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:16; --offset:-104; --runner-color:#E9F7F4;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:16; --offset:-120; --runner-color:#F8F3D8;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:6; --offset:-136; --runner-color:#FBEFDB;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:8; --offset:-142; --runner-color:#FBEBDC;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:10; --offset:-150; --runner-color:#FBEFDB;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:10; --offset:-160; --runner-color:#F8F3D8;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:20; --offset:-170; --runner-color:#E9F7F4;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:10; --offset:-190; --runner-color:#DBF2FC;" x="-1.5" y="-1.5" width="1003" height="153" rx="22" ry="22" pathLength="1000" />
+            </g>
+            <rect class="composer-path-border-base" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+            <g class="composer-path-border-runner composer-path-border-runner-main">
+              <rect class="composer-path-border-segment" style="--segment:26; --offset:0; --runner-color:#008EE5;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:28; --offset:-26; --runner-color:#018FE5;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:28; --offset:-54; --runner-color:#14A7EC;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:22; --offset:-82; --runner-color:#1CB1E5;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:16; --offset:-104; --runner-color:#75CCB9;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:16; --offset:-120; --runner-color:#D6B20A;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:6; --offset:-136; --runner-color:#E29618;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:8; --offset:-142; --runner-color:#E48120;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:10; --offset:-150; --runner-color:#E29618;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:10; --offset:-160; --runner-color:#D6B20A;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:20; --offset:-170; --runner-color:#75CCB9;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+              <rect class="composer-path-border-segment" style="--segment:10; --offset:-190; --runner-color:#18ACE9;" x="0.5" y="0.5" width="999" height="149" rx="20" ry="20" pathLength="1000" />
+            </g>
+          </svg>
+          <span class="composer-hover-border" aria-hidden="true"></span>
+          <div class="composer-mode composer-chat-mode">
+            <div class="composer-top">
+              <button class="upload-tile" aria-label="Upload reference"><img src="./assets/figma/dom/upload-add.svg" alt="" /></button>
+              <label class="prompt-wrap">
+                <span class="selected-skill-prompt"><img src="./assets/figma/dom/skill.svg" alt="" /><span></span></span>
+                <span>Start with an idea or script. Add elements with</span>
+                <span class="mention">@mentions</span>
+                <span>or type "/" for skills.</span>
+                <textarea aria-label="Chat prompt"></textarea>
+              </label>
+            </div>
+            <div class="composer-actions">
+              <div class="tool-row">
+                <button class="tool-btn blue">AI Agent<span class="agent-chev" aria-hidden="true"></span></button>
+                <button class="tool-btn"><img src="./assets/figma/dom/setting.svg" alt="" />Auto</button>
+                <button class="tool-btn skill-trigger" type="button" aria-haspopup="menu" aria-expanded="false"><span class="skill-doc-icon" aria-hidden="true"></span>Skill</button>
+                <button class="tool-btn icon-only"><img src="./assets/figma/dom/at.svg" alt="" /></button>
+              </div>
+              <div class="send-row">
+                <button aria-label="Voice input" class="voice"><img src="./assets/figma/canvas/voice.svg" alt="" /></button>
+                <button aria-label="Send" class="send" disabled><img src="./assets/figma/canvas/send-button-ready.svg" alt="" /></button>
+              </div>
+            </div>
+          </div>
+          <div class="composer-mode composer-canvas-mode">
+            <label class="canvas-prompt">
+              <span class="canvas-caret" aria-hidden="true"></span>
+              <span class="selected-skill-prompt"><img src="./assets/figma/dom/skill.svg" alt="" /><span></span></span>
+              <span class="canvas-placeholder">A train is in the sky, surrounded by pink clouds.</span>
+              <textarea aria-label="Canvas prompt"></textarea>
+            </label>
+            <div class="canvas-tool-row">
+              <button class="canvas-tool-icon" aria-label="Add"><img src="./assets/figma/canvas/icon-add.svg" alt="" /></button>
+              <button class="canvas-tool-btn skill-trigger" type="button" aria-haspopup="menu" aria-expanded="false"><span class="skill-doc-icon" aria-hidden="true"></span>Skill</button>
+              <button class="canvas-tool-icon" aria-label="Mention"><img src="./assets/figma/dom/at.svg" alt="" /></button>
+            </div>
+            <div class="send-row">
+              <button aria-label="Voice input" class="voice"><img src="./assets/figma/canvas/voice.svg" alt="" /></button>
+              <button aria-label="Send" class="send" disabled><img src="./assets/figma/canvas/send-button-ready.svg" alt="" /></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="skill-menu" aria-label="Skill menu" hidden>
+          <div class="skill-menu-search">
+            <span class="skill-menu-search-icon" aria-hidden="true"></span>
+            <span>Search skills</span>
+            <button class="skill-menu-more" type="button">More<span aria-hidden="true"></span></button>
+          </div>
+          <div class="skill-menu-list" role="menu">
+            <button class="skill-menu-item" type="button" role="menuitem" data-skill-name="Short story">
+              <span class="skill-doc-icon" aria-hidden="true"></span>
+              <span class="skill-menu-copy"><span class="skill-menu-title">Short story <span class="official-badge">official</span></span><span class="skill-menu-desc">Automatically generate story outlines, storyboards,...</span></span>
+            </button>
+            <button class="skill-menu-item" type="button" role="menuitem" data-skill-name="Marketing video">
+              <span class="skill-doc-icon" aria-hidden="true"></span>
+              <span class="skill-menu-copy"><span class="skill-menu-title">Marketing video <span class="official-badge">official</span></span><span class="skill-menu-desc">One sentence to help you generate a marketing pro...</span></span>
+            </button>
+            <button class="skill-menu-item" type="button" role="menuitem" data-skill-name="E-commerce suite">
+              <span class="skill-doc-icon" aria-hidden="true"></span>
+              <span class="skill-menu-copy"><span class="skill-menu-title">E-commerce suite <span class="official-badge">official</span></span><span class="skill-menu-desc">Generate a complete set of visual materials with a u...</span></span>
+            </button>
+            <button class="skill-menu-item" type="button" role="menuitem" data-skill-name="Poster design">
+              <span class="skill-doc-icon" aria-hidden="true"></span>
+              <span class="skill-menu-copy"><span class="skill-menu-title">Poster design <span class="official-badge">official</span></span><span class="skill-menu-desc">Generate more creative poster content that excels a...</span></span>
+            </button>
+            <button class="skill-menu-item" type="button" role="menuitem" data-skill-name="Brand design">
+              <span class="skill-doc-icon" aria-hidden="true"></span>
+              <span class="skill-menu-copy"><span class="skill-menu-title">Brand design <span class="official-badge">official</span></span><span class="skill-menu-desc">Generate more creative poster content that excels a...</span></span>
+            </button>
+          </div>
+          <div class="skill-menu-footer">
+            <button class="skill-menu-footer-item" type="button"><span class="skill-menu-plus" aria-hidden="true"></span>Create skills with agents</button>
+            <button class="skill-menu-footer-item" type="button"><span class="skill-menu-manage" aria-hidden="true"></span>Management skills</button>
+          </div>
+        </section>
+
+        <section class="skill-strip shared-skill-strip" aria-label="Skills">
+          <button class="skill-chip chip-1" data-skill-name="Short film">🎬 Short film</button>
+          <button class="skill-chip chip-2" data-skill-name="Poster design">🖌️ Poster design</button>
+          <button class="skill-chip chip-3" data-skill-name="Brand design">🎨 Brand design</button>
+          <button class="skill-chip chip-4" data-skill-name="Promo video">✨ Promo video</button>
+          <button class="skill-chip chip-more"><span>More</span><img src="./assets/figma/dom/icon-chevron-up-mini.svg" alt="" /></button>
+        </section>
+
+        <section class="lower-panel chat-lower" data-panel="chat"></section>
+
+        <section class="lower-panel canvas-home" data-panel="canvas" hidden>
+          <section class="canvas-section recent-projects" aria-label="Recent projects">
+            <div class="canvas-section-head"><h2>Recent projects</h2></div>
+            <div class="canvas-card-row recent-card-row canvas-entry-row">
+              <button class="canvas-card canvas-entry-card new-canvas-card">
+                <div class="canvas-thumb canvas-entry-thumb new-project-thumb">
+                  <img src="./assets/figma/canvas/canvas-entry-create.svg" alt="" />
+                </div>
+              </button>
+              <button class="canvas-card canvas-entry-card">
+                <div class="canvas-thumb canvas-entry-thumb media-thumb project-name-thumb">
+                  <img src="./assets/figma/canvas/canvas-entry-template.svg" alt="" />
+                </div>
+              </button>
+              <button class="canvas-card canvas-entry-card">
+                <div class="canvas-thumb canvas-entry-thumb media-thumb recent-video-thumb">
+                  <img class="canvas-entry-base" src="./assets/figma/canvas/canvas-entry-template-1.svg" alt="" />
+                </div>
+              </button>
+              <button class="canvas-card canvas-entry-card">
+                <div class="canvas-thumb canvas-entry-thumb media-thumb recent-image-thumb">
+                  <img class="canvas-entry-base" src="./assets/figma/canvas/canvas-entry-template-2.svg" alt="" />
+                </div>
+              </button>
+            </div>
+            <button class="canvas-view-all">View all</button>
+          </section>
+        </section>
+        <section class="feed shared-feed" aria-label="Recommendations" data-active-feed-tab="gd">
+          <div class="whats-new-head"><h2>What’s new</h2><span class="dots"><i></i><i></i><i></i></span></div>
+          <div class="whats-new-carousel is-at-start">
+            <div class="whats-new-grid">
+              <button class="whats-card"><img src="./assets/figma/dom/whatsnew-1.png" alt="Dreamina Seedance 2.5" /></button>
+              <button class="whats-card video-hover-thumb">
+                <video
+                  class="hover-preview-video"
+                  src="./assets/figma/dom/intelligent-video-editing-hover.mp4"
+                  poster="./assets/figma/dom/whatsnew-2.png"
+                  data-reset-mode="poster"
+                  aria-label="Intelligent Video Editing"
+                  muted
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </button>
+              <button class="whats-card"><img src="./assets/figma/dom/whatsnew-3.png" alt="Dreamina Seedream 5.0 Pro" /></button>
+              <button class="whats-card video-hover-thumb">
+                <video
+                  class="hover-preview-video"
+                  src="./assets/figma/dom/whatsnew-4-hover.mp4"
+                  aria-label="Macro Portraits"
+                  muted
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </button>
+            </div>
+            <button class="whats-new-prev" type="button" aria-label="Show previous What's new item"></button>
+            <button class="whats-new-next" type="button" aria-label="Show next What's new item"></button>
+          </div>
+
+          <nav class="category-tabs" aria-label="Categories">
+            <button data-feed-tab="am">Advertising &amp; Marketing</button>
+            <button class="selected" data-feed-tab="gd">Graphic Design</button>
+            <button>E-commerce</button>
+            <button>Film &amp; Video</button>
+            <button>Animation</button>
+            <span class="category-divider" aria-hidden="true"></span>
+            <button>Activity</button>
+          </nav>
+
+          <div class="feed-tab-panel feed-tab-am" data-feed-panel="am" hidden>
+            <section class="atom-section">
+              <div class="tools-head"><h2>Brand Ads</h2><button>View more</button></div>
+              <div class="atom-grid">
+                <button class="atom-card has-featured has-workflow"><span class="featured-tag" aria-label="Featured"></span><span class="atom-thumb video-hover-thumb atom-video-thumb"><video class="hover-preview-video" src="./assets/figma/am-provided/am-01-hover.mp4" muted loop playsinline preload="metadata"></video></span><strong>Macro Portraits</strong><span class="creator"><img src="./assets/figma/canvas/official-avatar.svg" alt="" />Dreamina AI</span><span class="workflow-btn">View workflow</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-02.png" alt="" /></span><strong>Macro Portraits</strong><span class="creator"><img src="./assets/figma/canvas/avatar-ssshy99.png" alt="" />ssshy99</span></button>
+                <button class="atom-card has-featured"><span class="featured-tag" aria-label="Featured"></span><span class="atom-thumb"><img src="./assets/figma/am-provided/am-03.png" alt="" /></span><strong>Reborn as a Scientist at Dreamina</strong><span class="creator"><img src="./assets/figma/canvas/avatar-huli-new.png" alt="" />XIXI</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-04.png" alt="" /></span><strong>Office B-roll</strong><span class="creator"><img src="./assets/figma/canvas/avatar-d3.png" alt="" />Dreamina Official</span></button>
+                <button class="atom-card has-featured"><span class="featured-tag" aria-label="Featured"></span><span class="atom-thumb"><img src="./assets/figma/am-provided/am-05.png" alt="" /></span><strong>Celestial Brand Gateway</strong><span class="creator"><img src="./assets/figma/canvas/official-avatar.svg" alt="" />Dreamina AI</span></button>
+                <button class="atom-card has-featured has-workflow"><span class="featured-tag" aria-label="Featured"></span><span class="atom-thumb"><img src="./assets/figma/am-provided/am-06.png" alt="" /></span><strong>Orbital City Launch</strong><span class="creator"><img src="./assets/figma/canvas/avatar-jinx-new.png" alt="" />Jinx</span><span class="workflow-btn">View workflow</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-07.png" alt="" /></span><strong>Orbital City Launch</strong><span class="creator"><img src="./assets/figma/canvas/avatar-d3.png" alt="" />Dreamina Official</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-08.png" alt="" /></span><strong>Cloud Mirror Identity</strong><span class="creator"><img src="./assets/figma/canvas/avatar-huli.png" alt="" />D3</span></button>
+              </div>
+            </section>
+
+            <section class="atom-section">
+              <div class="tools-head"><h2>Social Media Marketing</h2><button>View more</button></div>
+              <div class="atom-grid">
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-09.png" alt="" /></span><strong>Macro Portraits</strong><span class="creator"><img src="./assets/figma/canvas/official-avatar.svg" alt="" />Dreamina AI</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-10.png" alt="" /></span><strong>Macro Portraits</strong><span class="creator"><img src="./assets/figma/canvas/avatar-ssshy99.png" alt="" />ssshy99</span></button>
+                <button class="atom-card has-featured"><span class="featured-tag" aria-label="Featured"></span><span class="atom-thumb"><img src="./assets/figma/am-provided/am-11.png" alt="" /></span><strong>Reborn as a Scientist at Dreamina</strong><span class="creator"><img src="./assets/figma/canvas/avatar-huli-new.png" alt="" />HULI9987233</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-12.png" alt="" /></span><strong>Office B-roll</strong><span class="creator"><img src="./assets/figma/canvas/avatar-huli.png" alt="" />JOJO</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-13.png" alt="" /></span><strong>Luxury Space Portal</strong><span class="creator"><img src="./assets/figma/canvas/official-avatar.svg" alt="" />Dreamina AI</span></button>
+                <button class="atom-card has-workflow"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-14.png" alt="" /></span><strong>Macro Portraits</strong><span class="creator"><img src="./assets/figma/canvas/avatar-jinx-new.png" alt="" />Jinx</span><span class="workflow-btn">View workflow</span></button>
+                <button class="atom-card has-featured"><span class="featured-tag" aria-label="Featured"></span><span class="atom-thumb"><img src="./assets/figma/am-provided/am-15.png" alt="" /></span><strong>Reborn as a Scientist at Dreamina</strong><span class="creator"><img src="./assets/figma/canvas/avatar-huli.png" alt="" />Dreamina</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-16.png" alt="" /></span><strong>Office B-roll</strong><span class="creator"><img src="./assets/figma/canvas/avatar-d3.png" alt="" />D3</span></button>
+              </div>
+            </section>
+
+            <section class="atom-section">
+              <div class="tools-head"><h2>Poster Key Visuals</h2><button>View more</button></div>
+              <div class="atom-grid">
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-17.png" alt="" /></span><strong>Quilted Bag Showcase</strong><span class="creator"><img src="./assets/figma/canvas/official-avatar.svg" alt="" />Dreamina AI</span></button>
+                <button class="atom-card has-featured"><span class="featured-tag" aria-label="Featured"></span><span class="atom-thumb"><img src="./assets/figma/am-provided/am-18.png" alt="" /></span><strong>Gold Charm Close-Up</strong><span class="creator"><img src="./assets/figma/canvas/avatar-ssshy99.png" alt="" />ssshy99</span></button>
+                <button class="atom-card has-workflow"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-19.png" alt="" /></span><strong>Silk Scarf Story</strong><span class="creator"><img src="./assets/figma/canvas/avatar-huli-new.png" alt="" />HULI9987233</span><span class="workflow-btn">View workflow</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-20.png" alt="" /></span><strong>Summer Accessory Flatlay</strong><span class="creator"><img src="./assets/figma/canvas/official-avatar.svg" alt="" />Dreamina Official</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-21.png" alt="" /></span><strong>Coastal Shoe Look</strong><span class="creator"><img src="./assets/figma/canvas/official-avatar.svg" alt="" />Dreamina AI</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/am-provided/am-22.png" alt="" /></span><strong>Green Chair Bag</strong><span class="creator"><img src="./assets/figma/canvas/avatar-jinx-new.png" alt="" />Jinx</span></button>
+                <button class="atom-card has-featured"><span class="featured-tag" aria-label="Featured"></span><span class="atom-thumb"><img src="./assets/figma/scheme1/raw-17.jpeg" alt="" /></span><strong>Picnic Outfit Edit</strong><span class="creator"><img src="./assets/figma/canvas/official-avatar.svg" alt="" />Dreamina AI</span></button>
+                <button class="atom-card"><span class="atom-thumb"><img src="./assets/figma/scheme1/raw-20.jpeg" alt="" /></span><strong>Lily Pad Mini Bag</strong><span class="creator"><img src="./assets/figma/canvas/avatar-d3.png" alt="" />D3</span></button>
+              </div>
+            </section>
+          </div>
+
+          <div class="feed-tab-panel feed-tab-gd" data-feed-panel="gd">
+            <section class="gd-section">
+              <div class="tools-head"><h2>Poster Key Visuals</h2><button>View more</button></div>
+              <div class="gd-collage" aria-label="Poster Key Visuals">
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd/poster-01.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-portrait gd-layered"><img src="./assets/figma/gd/poster-05.png" alt="" /><img src="./assets/figma/gd/poster-05-overlay.png" alt="" /></button>
+                </div>
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd/poster-02.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd/poster-05.png" alt="" /></button>
+                </div>
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait gd-layered"><img src="./assets/figma/gd/poster-03-base.png" alt="" /><img src="./assets/figma/gd/poster-03-overlay.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-landscape gd-layered"><img src="./assets/figma/gd/poster-07-base.png" alt="" /><img src="./assets/figma/gd/poster-07-overlay.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-landscape gd-layered"><span class="gd-surface"></span><img src="./assets/figma/gd/poster-07-overlay.png" alt="" /><img class="gd-serendipity" src="./assets/figma/gd/poster-08-main-replacement.png" alt="" /></button>
+                </div>
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd/poster-04.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-portrait gd-layered"><img src="./assets/figma/gd/poster-08-main-replacement.png" alt="" /><img src="./assets/figma/gd/poster-08-overlay.png" alt="" /></button>
+                </div>
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait gd-layered"><img src="./assets/figma/gd/poster-08-main.png" alt="" /><img src="./assets/figma/gd/poster-08-overlay.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd/poster-02.png" alt="" /></button>
+                </div>
+                <button class="gd-view-more" type="button">View more<span aria-hidden="true"></span></button>
+              </div>
+            </section>
+            <section class="gd-section gd-product-section">
+              <div class="tools-head"><h2>Product</h2><button>View more</button></div>
+              <div class="gd-collage gd-product-collage" aria-label="Product">
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd-product/product-01.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd-product/product-04.png" alt="" /></button>
+                </div>
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd-product/product-02.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd-product/product-05.png" alt="" /></button>
+                </div>
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd-product/product-03-b.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-landscape"><img src="./assets/figma/gd-product/product-06.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-landscape"><img src="./assets/figma/gd-product/product-07.png" alt="" /></button>
+                </div>
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd-product/product-08.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd-product/product-07.png" alt="" /></button>
+                </div>
+                <div class="gd-column">
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd-product/product-08-bg.png" alt="" /></button>
+                  <button class="gd-tile gd-tile-portrait"><img src="./assets/figma/gd-product/product-03-a.png" alt="" /></button>
+                </div>
+                <button class="gd-view-more" type="button">View more<span aria-hidden="true"></span></button>
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js?v=chat-a1-131"></script>
+  </body>
+</html>
